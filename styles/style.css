@@ -1,0 +1,420 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End of CSS Reset */
+/* general styles */
+/*box sizing fix*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+/*end of box sizing fix*/
+/*---------------------*/
+
+body {
+    background-color: #353b41;
+    font-size: 18px;
+    height: 100%;
+}
+
+#wrapper {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #46535D;
+    
+}
+
+#wrapper:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+/* end of general styling */
+
+/*header*/
+header {
+    background-color: #f97960;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+
+#logo .avatar {
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: .327em solid white;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 20px; bottom:0; left: 0; right:0;
+    
+}
+
+
+
+#logo h1 {
+    display: block;
+    font-family: sans-serif;
+    color: white;
+    font-size: 4em;
+    margin: 50px 0px 50px 0px;
+    clear: both;
+    
+}
+
+nav {
+    text-align: center;
+    margin-bottom:-40px;
+    background-color: #EF6B51;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: #F97960;
+}
+
+nav ul li a:active {
+    background-color: #F97960;
+}
+
+.hero {
+    background-image: url('../img/girl-camera.jpg');
+    min-height: 576px;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-col {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-top: 210px;
+}
+.hero h1 {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #F87860;
+    display: inline-block;
+    padding: 10px 16px 10px 16px;
+    margin-bottom: 25px;
+    
+
+}
+
+.hero p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(48, 57, 64, 0.5);
+    display: block;
+    padding: 10px 16px 10px 16px;
+}
+
+.btn {
+    font-size: 1.4em;
+    font-weight: 100;
+    background: #303940;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    line-height: 1.6em;
+    padding: 6px;
+    margin-top: 25px;
+}
+
+
+.page-content {
+    margin: 120px 35px 25px 35px;
+    padding-bottom: 100px;
+
+    
+}
+
+.page-content:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+.page-content h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dcdedf;
+}
+
+.quote {
+    margin-bottom: 74px;
+}
+.testimonials {
+    width: 46%;
+    float: left;
+}
+
+.avatar {
+    float: right;
+    margin: 0 0 1em 1em;
+    border-radius: 100%;
+    border: .327em solid white;
+    width: 64px;
+    height: 64px;
+}
+
+.testimonials blockquote {
+    margin-bottom: 1em;
+}
+
+.testimonials h2 {
+    margin-bottom: 1.3em;
+}
+
+.testimonials p {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9a9fa2;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    line-height: 24px;
+}
+
+.author {
+    display: inline-block;
+    margin: 0;
+    font-weight: 700;
+    font-style: normal;
+    word-break: break-word;
+    color: #999;
+}
+
+.title {
+    text-transform: uppercase;
+    display: block;
+    
+    margin-top: 9px;
+}
+/*booking side*/
+.booking {
+    width: 46%;
+    float: right;
+}
+
+.booking-info {
+    margin-top: 18px;
+}
+
+.booking-info h2 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-bottom: 14px;
+
+}
+
+.booking-info p, .booking-calendar p {
+    color: #9a9fa2;
+    margin-bottom: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    line-height: 24px;
+}
+
+.booking-calendar {
+    margin-top: 48px;
+}
+
+.calendar-btn {
+    background: #303940;
+    color: white;
+    border:0;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 28px;
+    cursor: pointer;
+}
+    
+/* footer stuff */
+footer {
+    background-color: #262F36;
+    color: white;
+    padding-top: 40px;
+    
+}
+
+footer:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+footer h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 18px;
+}
+
+.footer-widget {
+    width: 29%;
+    float: left;
+    padding-bottom: 30px;
+    
+}
+
+.footer-widget:nth-child(2) {
+    margin-left: 40px;
+    
+}
+.footer-widget:nth-child(3) {
+    margin-left: 40px;
+    
+}
+ 
+.footer-from-blog {
+    margin-left: 40px;
+}
+
+.footer-from-blog ul li {
+    list-style-type: none;
+    padding: 10px 20px 10px 0px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.footer-from-blog ul li a {
+    text-decoration: none;
+    color: #F97960;
+}
+
+.footer-recent-projects ul li {
+    list-style-type: none;
+    padding: 10px 20px 30px 0px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: left;
+}
+.footer-recent-projects ul li a {
+    text-decoration: none;
+    color: #F97960;
+}
+
+.like-duo p {
+    color: #6D7579;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+
+.like-duo a {
+    color: #f97960;
+    text-decoration: none;
+    
+}
+
+.like-btn {
+    background: #303940;
+    color: white;
+    border:0;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom: 26px;
+    cursor: pointer;
+}
+
+.footer-copyright {
+    clear: both;
+    width: 100%;
+    height:120px;
+    background-color: #1F282F;
+    
+}
+
+.footer-copyright p {
+    margin-top: 45px;
+    color: #6D7579;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.copyleft {
+    width: 45%;
+    float: left
+}
+
+.copyright {
+    width: 45%;
+    float: right;
+}
+
+.footer-box {
+    width: 920px;
+    margin: 0 auto;
+}

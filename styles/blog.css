@@ -1,0 +1,474 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End of CSS Reset */
+
+
+
+
+
+
+
+
+
+
+
+
+/* general styles */
+/*box sizing fix*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+/*end of box sizing fix*/
+/*---------------------*/
+
+body {
+    background-color: #353b41;
+    font-size: 18px;
+    height: 100%;
+}
+
+#wrapper {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #46535D;
+    
+}
+
+#wrapper:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+/* end of general styling */
+
+/*header*/
+header {
+    background-color: #f97960;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+
+#logo .avatar {
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: .327em solid white;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 20px; bottom:0; left: 0; right:0;
+    
+}
+
+
+
+#logo h1 {
+    display: block;
+    font-family: sans-serif;
+    color: white;
+    font-size: 4em;
+    margin: 50px 0px 50px 0px;
+    clear: both;
+    
+}
+
+nav {
+    text-align: center;
+    margin-bottom:-40px;
+    background-color: #EF6B51;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #F97960;
+}
+
+nav ul li a:active {
+    background-color: #F97960;
+}
+
+.btn {
+    font-size: 1.4em;
+    font-weight: 100;
+    background: #303940;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    line-height: 1.6em;
+    padding: 6px;
+    margin-top: 25px;
+}
+
+.page-content-blog {
+    margin: 80px 35px 25px 35px;
+    padding-bottom: 100px;
+
+    
+}
+
+.page-content-blog:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+.page-content-blog h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dcdedf;
+}
+
+
+
+/* footer stuff */
+footer {
+    background-color: #262F36;
+    color: white;
+    padding-top: 40px;
+    
+}
+
+footer:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+footer h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 18px;
+}
+
+.footer-widget {
+    width: 29%;
+    float: left;
+    padding-bottom: 30px;
+    
+}
+
+.footer-widget:nth-child(2) {
+    margin-left: 40px;
+    
+}
+.footer-widget:nth-child(3) {
+    margin-left: 40px;
+    
+}
+ 
+.footer-from-blog {
+    margin-left: 40px;
+}
+
+.footer-from-blog ul li {
+    list-style-type: none;
+    padding: 10px 20px 10px 0px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.footer-from-blog ul li a {
+    text-decoration: none;
+    color: #F97960;
+}
+
+.footer-recent-projects ul li {
+    list-style-type: none;
+    padding: 10px 20px 30px 0px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: left;
+}
+.footer-recent-projects ul li a {
+    text-decoration: none;
+    color: #F97960;
+}
+
+.like-duo p {
+    color: #6D7579;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+
+.like-duo a {
+    color: #f97960;
+    text-decoration: none;
+    
+}
+
+.like-btn {
+    background: #303940;
+    color: white;
+    border:0;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom: 26px;
+    cursor: pointer;
+}
+
+.footer-copyright {
+    clear: both;
+    width: 100%;
+    height:120px;
+    background-color: #1F282F;
+    
+}
+
+.footer-copyright p {
+    margin-top: 45px;
+    color: #6D7579;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.copyleft {
+    width: 45%;
+    float: left
+}
+
+.copyright {
+    width: 45%;
+    float: right;
+}
+
+.footer-box {
+    width: 920px;
+    margin: 0 auto;
+}
+
+
+/*end of general styling*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+.blog-main {
+    width: 61%;
+    float: left;
+}
+
+.sidebar {
+    width: 31%;
+    float: right;
+}
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+.post-meta {
+    color: #9a9fa2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.914em;
+}
+
+.post-meta a {
+    color: white;
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+    color: #EF5032;
+}
+
+.post-meta span {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+.excerpt{
+    margin-bottom: 54px;
+}
+
+.excerpt h2 {
+    padding-bottom: 12px;
+}
+
+.entry p {
+    margin-top: 45px;
+    color: #9a9fa2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.914em;
+    line-height: 22px;
+}
+
+.read-more a {
+    color: #f97960;
+    text-decoration: none;
+    
+}
+
+.read-more a:hover {
+    color: #EF5032;
+    text-decoration: underline;
+}
+
+/*sidebar styles*/
+.sidebar-widget {
+    margin-bottom: 30px;
+    color: #9a9fa2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.914em;
+}
+.sidebar-widget h3 {
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dcdedf;
+    margin-bottom: 0;
+}
+
+.searchform {
+    background-color: #fff;
+    width: 98%;
+    margin-top: 5px;
+    border-color: #efefef;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.sidebar-widget ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #9a9fa2;
+}
+.sidebar-widget ul li {
+    line-height: 28px;
+}
+
+.sidebar-widget a {
+    color: #f97960;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.sidebar-widget a:hover {
+    color: #EF5032;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*portfolio page styles */
+.projects h2 {
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    width: 48%;
+    float: left;
+    margin-right: 20px;
+}
+
+.portfolio-item h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+.portfolio-item a {
+    color: #f97960;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.portfolio-item a:hover {
+    color: #EF5032;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio-item p {
+    
+    color: #9a9fa2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.914em;
+    line-height: 22px;
+}
+
+.portfolio-item:nth-child(3) {
+    margin-right: 0;
+}
+
+.portfolio-item:nth-child(5) {
+    margin-right: 0;
+}
+
+/*end of portfolio page styles */
